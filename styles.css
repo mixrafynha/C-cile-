@@ -4,11 +4,12 @@
   --blue: #2d7dd2;
   --blue-dark: #15446f;
   --aqua: #16a8a5;
-  --mist: #eef8fb;
+  --mist: #edf8fb;
   --surface: #ffffff;
   --cream: #f7fbfc;
   --line: rgba(23, 33, 42, 0.12);
   --shadow: 0 22px 60px rgba(21, 68, 111, 0.14);
+  --soft-shadow: 0 16px 40px rgba(21, 68, 111, 0.1);
 }
 
 * {
@@ -127,20 +128,25 @@ a {
   background: var(--blue-dark);
 }
 
-.hero > img {
+.hero-media,
+.hero-media img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+}
+
+.hero-media img {
   object-fit: cover;
+  object-position: center;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(8, 36, 58, 0.82), rgba(8, 36, 58, 0.34) 58%, rgba(8, 36, 58, 0.04)),
-    linear-gradient(0deg, rgba(8, 36, 58, 0.44), rgba(8, 36, 58, 0));
+    linear-gradient(90deg, rgba(8, 36, 58, 0.72), rgba(8, 36, 58, 0.28) 55%, rgba(8, 36, 58, 0)),
+    linear-gradient(0deg, rgba(8, 36, 58, 0.32), rgba(8, 36, 58, 0));
 }
 
 .hero-content {
@@ -170,7 +176,7 @@ a {
 
 .hero h1 {
   max-width: 720px;
-  font-size: clamp(42px, 6vw, 82px);
+  font-size: clamp(40px, 5.6vw, 78px);
 }
 
 .hero-copy {
@@ -248,6 +254,19 @@ a {
   padding-top: 130px;
 }
 
+.section-band {
+  position: relative;
+}
+
+.section-band::before {
+  position: absolute;
+  z-index: -1;
+  inset: 56px -32px 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(237, 248, 251, 0.95), rgba(255, 255, 255, 0));
+  content: "";
+}
+
 .split {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -257,7 +276,7 @@ a {
 
 .section h2,
 .contact-section h2 {
-  font-size: clamp(34px, 4.5vw, 58px);
+  font-size: clamp(32px, 4.2vw, 54px);
 }
 
 .section-copy p:not(.eyebrow),
@@ -275,16 +294,18 @@ a {
 }
 
 .service-card {
-  min-height: 220px;
-  padding: 26px;
+  min-height: 228px;
+  padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: var(--soft-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .service-card:hover {
   box-shadow: var(--shadow);
+  border-color: rgba(45, 125, 210, 0.2);
   transform: translateY(-5px);
 }
 
@@ -315,6 +336,7 @@ a {
 .showcase-image img {
   width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .showcase-panel {
@@ -481,32 +503,36 @@ a {
   }
 
   .hero {
-    min-height: 690px;
+    min-height: 100svh;
   }
 
-  .hero > img {
-    object-position: 62% center;
+  .hero-media img {
+    object-position: center top;
   }
 
   .hero-overlay {
-    background: linear-gradient(0deg, rgba(8, 36, 58, 0.86), rgba(8, 36, 58, 0.18));
+    background:
+      linear-gradient(0deg, rgba(8, 36, 58, 0.84), rgba(8, 36, 58, 0.28) 58%, rgba(8, 36, 58, 0.06)),
+      linear-gradient(90deg, rgba(8, 36, 58, 0.34), rgba(8, 36, 58, 0));
   }
 
   .hero-content {
     display: flex;
-    min-height: 690px;
+    min-height: 100svh;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 110px 0 58px;
+    padding: 120px 0 52px;
   }
 
   .hero h1 {
-    font-size: 39px;
+    max-width: 430px;
+    font-size: clamp(36px, 10vw, 43px);
     line-height: 1.03;
   }
 
   .hero-copy {
-    font-size: 15px;
+    max-width: 430px;
+    font-size: 16px;
     line-height: 1.6;
   }
 
@@ -537,22 +563,27 @@ a {
   }
 
   .section {
-    padding: 62px 0;
+    width: min(100% - 28px, 520px);
+    padding: 66px 0;
   }
 
   .services-section {
-    padding-top: 76px;
+    padding-top: 74px;
+  }
+
+  .section-band::before {
+    inset: 32px -14px 18px;
   }
 
   .section h2,
   .contact-section h2 {
-    font-size: 34px;
+    font-size: clamp(31px, 8.5vw, 38px);
     line-height: 1.04;
   }
 
   .service-card {
     min-height: auto;
-    padding: 22px;
+    padding: 24px;
   }
 
   .service-card h3 {
@@ -565,9 +596,13 @@ a {
     min-height: auto;
   }
 
+  .showcase-image img {
+    aspect-ratio: 4 / 3;
+  }
+
   .showcase-panel,
   .contact-section {
-    padding: 30px 22px;
+    padding: 32px 22px;
   }
 
   .footer {
