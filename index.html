@@ -39,7 +39,10 @@
 
     <main id="accueil">
       <section class="hero">
-        <img src="assets/hero-cleaning-montpellier.webp" alt="Appartement lumineux et propre à Montpellier" />
+        <picture class="hero-media">
+          <source media="(max-width: 820px)" srcset="assets/hero-cleaning-montpellier-mobile.webp" />
+          <img src="assets/hero-cleaning-montpellier.webp" alt="Appartement lumineux et propre à Montpellier" />
+        </picture>
         <div class="hero-overlay"></div>
         <div class="hero-content reveal">
           <p class="eyebrow">Nettoyage soigné à Montpellier</p>
@@ -55,7 +58,7 @@
         </div>
       </section>
 
-      <section class="stats-band reveal">
+      <section class="stats-band reveal" aria-label="Points forts de Cécile Nettoyage">
         <div>
           <strong>24h</strong>
           <span>réponse rapide</span>
@@ -70,7 +73,7 @@
         </div>
       </section>
 
-      <section class="section split services-section" id="services">
+      <section class="section split services-section section-band" id="services">
         <div class="section-copy sticky-copy reveal">
           <p class="eyebrow">Services</p>
           <h2>Un nettoyage adapté à chaque lieu.</h2>
