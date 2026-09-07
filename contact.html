@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Cécile Nettoyage Montpellier</title>
+    <meta name="description" content="Demander un devis de nettoyage à Montpellier avec Cécile Nettoyage." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="inner-page contact-page">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Cécile Nettoyage accueil"><span class="brand-mark">C</span><span><strong>Cécile</strong><small>Nettoyage Montpellier</small></span></a>
+      <button class="menu-button" type="button" aria-label="Ouvrir le menu" data-menu-button><span></span><span></span></button>
+      <nav class="main-nav" data-nav>
+        <a href="services.html">Services</a><a href="formules.html">Formules</a><a href="catalogue.html">Catalogue</a><a href="secteurs.html">Secteurs</a><a class="active" href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <img src="assets/airbnb-cleaning.webp" alt="Cuisine propre prête à accueillir" width="720" height="720" />
+        <div class="page-hero-copy reveal"><p class="eyebrow">Contact</p><h1>Un devis clair pour un espace impeccable.</h1><p>Envoyez la surface, le quartier, le type de nettoyage et la fréquence souhaitée.</p></div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Demande rapide</p>
+          <h2>Expliquez le besoin.</h2>
+          <p>Cécile vous répond avec une proposition simple, adaptée au lieu et au niveau de finition attendu.</p>
+        </div>
+        <form class="contact-form reveal">
+          <label>Nom<input type="text" placeholder="Votre nom" /></label>
+          <label>Téléphone<input type="tel" placeholder="06 00 00 00 00" /></label>
+          <label>Type de nettoyage<select><option>Ménage à domicile</option><option>Bureaux / commerce</option><option>Location saisonnière</option><option>Remise en état</option></select></label>
+          <label>Message<textarea placeholder="Surface, quartier, fréquence..."></textarea></label>
+          <button class="button primary" type="button">Envoyer la demande</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer"><strong>Cécile Nettoyage</strong><span>Montpellier · Devis clair · Réponse rapide</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
