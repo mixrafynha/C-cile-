@@ -13,12 +13,12 @@ export const images = {
 };
 
 export const services = [
-  ["01", "Ménage à domicile", "Entretien régulier, cuisine, salle de bain, sols, poussières, surfaces et détails visibles.", "Hebdomadaire ou ponctuel"],
-  ["02", "Bureaux & commerces", "Accueil, postes de travail, sanitaires, sols, vitrines intérieures et zones de passage.", "Avant ouverture ou après fermeture"],
-  ["03", "Locations Airbnb", "Remise au propre entre deux voyageurs, linge, cuisine, salle de bain et contrôle final.", "Check-list entre séjours"],
-  ["04", "Remise en état", "Déménagement, après travaux légers, logement fermé longtemps ou grand nettoyage saisonnier.", "Intervention intensive"],
-  ["05", "Vitres & traces", "Surfaces vitrées accessibles, miroirs, traces de doigts, finitions brillantes.", "Finition premium"],
-  ["06", "Cuisine & sanitaires", "Zones sensibles, robinetterie, plaques, évier, douche, WC et surfaces de contact.", "Hygiène renforcée"]
+  ["01", "Ménage à domicile", "Entretien régulier, cuisine, salle de bain, sols, poussières, surfaces et détails visibles.", "Hebdomadaire ou ponctuel", ecoImage],
+  ["02", "Bureaux & commerces", "Accueil, postes de travail, sanitaires, sols, vitrines intérieures et zones de passage.", "Avant ouverture ou après fermeture", officeImage],
+  ["03", "Locations Airbnb", "Remise au propre entre deux voyageurs, linge, cuisine, salle de bain et contrôle final.", "Check-list entre séjours", airbnbImage],
+  ["04", "Remise en état", "Déménagement, après travaux légers, logement fermé longtemps ou grand nettoyage saisonnier.", "Intervention intensive", heroDesktop],
+  ["05", "Vitres & traces", "Surfaces vitrées accessibles, miroirs, traces de doigts, finitions brillantes.", "Finition premium", heroDesktop],
+  ["06", "Cuisine & sanitaires", "Zones sensibles, robinetterie, plaques, évier, douche, WC et surfaces de contact.", "Hygiène renforcée", ecoImage]
 ];
 
 export const packages = [

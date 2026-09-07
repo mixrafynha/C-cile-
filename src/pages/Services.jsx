@@ -13,8 +13,8 @@ export default function Services() {
         image={images.officeImage}
       />
       <section className="section service-grid service-grid-large">
-        {services.map(([number, title, text, detail]) => (
-          <ServiceCard key={number} number={number} title={title} text={text} detail={detail} />
+        {services.map(([number, title, text, detail, image]) => (
+          <ServiceCard key={number} number={number} title={title} text={text} detail={detail} image={image} />
         ))}
       </section>
     </main>

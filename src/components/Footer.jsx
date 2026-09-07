@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/cecile-logo.webp";
 
 const footerLinks = [
   ["/services", "Services"],
@@ -14,10 +15,10 @@ export default function Footer() {
       <div className="footer-main">
         <div className="footer-brand">
           <Link className="footer-logo" to="/" aria-label="Cécile Nettoyage accueil">
-            <span className="footer-logo-mark">C</span>
+            <img className="footer-brand-logo" src={logo} alt="Cécile Nettoyage" />
             <span>
-              <strong>Cécile Nettoyage</strong>
-              <small>Montpellier & alentours</small>
+              <strong>Nettoyage à Lunel</strong>
+              <small>Lunel 34400 & alentours</small>
             </span>
           </Link>
           <h2>Un intérieur impeccable, sans stress.</h2>
