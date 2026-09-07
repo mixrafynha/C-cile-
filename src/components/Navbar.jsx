@@ -36,6 +36,7 @@ export default function Navbar() {
       >
         <span></span>
         <span></span>
+        <span></span>
       </button>
       <nav id="mobile-navigation" className={`main-nav mobile-dropdown ${open ? "open" : ""}`}>
         {links.map(([to, label]) => (
