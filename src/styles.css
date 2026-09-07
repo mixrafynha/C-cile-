@@ -51,7 +51,7 @@ a {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 15px max(28px, calc((100vw - 1180px) / 2));
+  padding: 12px max(28px, calc((100vw - 1180px) / 2));
   border-bottom: 0;
   border-radius: 0;
   background: transparent;
@@ -95,8 +95,8 @@ a {
 }
 
 .brand-logo {
-  width: 131px;
-  height: 58px;
+  width: 112px;
+  height: 50px;
   object-fit: contain;
   object-position: left center;
 }
@@ -139,10 +139,10 @@ a {
 }
 
 .main-nav a {
-  padding: 9px 12px;
+  padding: 7px 10px;
   border-radius: var(--radius-sm);
   color: rgba(255, 255, 255, 0.94);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.01em;
 }
@@ -1256,7 +1256,7 @@ a {
   .site-header {
     top: 0;
     width: 100%;
-    padding: 8px 12px;
+    padding: 6px 10px;
     background: transparent;
     box-shadow: none;
   }
@@ -1271,8 +1271,8 @@ a {
   }
 
   .brand-logo {
-    width: 131px;
-    height: 53px;
+    width: 112px;
+    height: 46px;
   }
 
   .brand-mark {
@@ -1281,9 +1281,9 @@ a {
 
   .mobile-menu-button {
     display: flex;
-    flex-basis: 32px;
-    width: 32px;
-    height: 32px;
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
   }
 
   .mobile-dropdown {
@@ -1292,7 +1292,7 @@ a {
     right: 8px;
     left: auto;
     display: none;
-    width: 126px;
+    width: 118px;
     gap: 0;
     padding: 5px;
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -1310,11 +1310,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 29px;
-    padding: 6px 8px;
+    min-height: 27px;
+    padding: 5px 7px;
     border-radius: 4px;
     color: var(--ink);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     text-align: left;
   }
@@ -1474,7 +1474,7 @@ a {
 
   .service-card-image {
     width: calc(100% + 48px);
-    height: 150px;
+    height: 190px;
     margin: -24px -24px 20px;
   }
 
@@ -1654,14 +1654,14 @@ a {
   }
 
   .brand-logo {
-    width: 131px;
-    height: 53px;
+    width: 112px;
+    height: 46px;
   }
 
   .mobile-menu-button {
-    flex-basis: 32px;
-    width: 32px;
-    height: 32px;
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
   }
 
   .hero-content {
