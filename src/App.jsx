@@ -8,6 +8,7 @@ import Formules from "./pages/Formules.jsx";
 import Catalogue from "./pages/Catalogue.jsx";
 import Secteurs from "./pages/Secteurs.jsx";
 import Contact from "./pages/Contact.jsx";
+import SEO from "./components/SEO.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <SEO />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

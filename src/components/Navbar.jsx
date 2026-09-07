@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import logo from "../assets/cecile-logo.webp";
 
 const links = [
   ["/services", "Services"],
@@ -23,11 +24,7 @@ export default function Navbar() {
   return (
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <Link className="brand" to="/" aria-label="Cécile Nettoyage accueil" onClick={() => setOpen(false)}>
-        <span className="brand-mark">C</span>
-        <span>
-          <strong>Cécile</strong>
-          <small>Nettoyage Montpellier</small>
-        </span>
+        <img className="brand-logo" src={logo} alt="Cécile Nettoyage" />
       </Link>
       <button className="mobile-menu-button menu-button" type="button" aria-label="Ouvrir le menu" onClick={() => setOpen((value) => !value)}>
         <span></span>
