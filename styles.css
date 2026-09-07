@@ -52,11 +52,11 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 18px max(28px, calc((100vw - 1180px) / 2));
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 0;
   border-radius: 0;
-  background: linear-gradient(180deg, rgba(5, 29, 41, 0.76), rgba(5, 29, 41, 0.18));
+  background: transparent;
   box-shadow: none;
-  backdrop-filter: blur(12px);
+  backdrop-filter: none;
 }
 
 .brand {
@@ -826,7 +826,7 @@ a {
 }
 
 .inner-page .site-header {
-  background: linear-gradient(180deg, rgba(5, 29, 41, 0.82), rgba(5, 29, 41, 0.32));
+  background: transparent;
 }
 
 .page-hero {
