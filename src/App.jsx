@@ -9,6 +9,8 @@ import Catalogue from "./pages/Catalogue.jsx";
 import Secteurs from "./pages/Secteurs.jsx";
 import Contact from "./pages/Contact.jsx";
 import SEO from "./components/SEO.jsx";
+import CookieConsent from "./components/CookieConsent.jsx";
+import Legal from "./pages/Legal.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -63,8 +65,12 @@ export default function App() {
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/secteurs" element={<Secteurs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/mentions-legales" element={<Legal type="mentions" />} />
+        <Route path="/politique-confidentialite" element={<Legal type="privacy" />} />
+        <Route path="/cookies" element={<Legal type="cookies" />} />
       </Routes>
       <Footer />
+      <CookieConsent />
     </>
   );
 }

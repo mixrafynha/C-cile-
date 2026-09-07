@@ -39,8 +39,16 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>Cécile Nettoyage · Montpellier</span>
+        <span>© {new Date().getFullYear()} Cécile Nettoyage · Tous droits réservés</span>
         <span>Particuliers · Professionnels · Locations</span>
+        <div className="footer-legal-links">
+          <Link to="/mentions-legales">Mentions légales</Link>
+          <Link to="/politique-confidentialite">Confidentialité</Link>
+          <Link to="/cookies">Cookies</Link>
+        </div>
+        <span className="footer-credit">
+          Site created by <a href="https://rafynhadev.online" target="_blank" rel="noreferrer">rafynha</a>
+        </span>
       </div>
     </footer>
   );
