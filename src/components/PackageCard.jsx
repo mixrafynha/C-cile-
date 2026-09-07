@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function PackageCard({ pack }) {
   return (
-    <article className={`package-card reveal visible ${pack.featured ? "featured" : ""}`}>
+    <article className={`package-card reveal ${pack.featured ? "featured" : ""}`}>
       <span>{pack.label}</span>
       <h3>{pack.title}</h3>
       <p>{pack.text}</p>

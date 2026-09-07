@@ -3,7 +3,7 @@ export default function Hero({ eyebrow, title, text, image, mobileImage, childre
     return (
       <section className="page-hero">
         <img src={image} alt="" width="1600" height="900" />
-        <div className="page-hero-copy reveal visible">
+        <div className="page-hero-copy reveal">
           <p className="eyebrow">{eyebrow}</p>
           <h1>{title}</h1>
           <p>{text}</p>
@@ -19,7 +19,7 @@ export default function Hero({ eyebrow, title, text, image, mobileImage, childre
         <img src={image} alt="Appartement lumineux et propre à Montpellier" width="1600" height="900" fetchPriority="high" />
       </picture>
       <div className="hero-overlay"></div>
-      <div className="hero-content reveal visible">
+      <div className="hero-content reveal">
         <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>
         <p className="hero-copy">{text}</p>

@@ -12,12 +12,12 @@ export default function Contact() {
         image={images.airbnbImage}
       />
       <section className="contact-section">
-        <div className="contact-copy reveal visible">
+        <div className="contact-copy reveal">
           <p className="eyebrow">Demande rapide</p>
           <h2>Expliquez le besoin.</h2>
           <p>Cécile vous répond avec une proposition simple, adaptée au lieu et au niveau de finition attendu.</p>
         </div>
-        <form className="contact-form reveal visible">
+        <form className="contact-form reveal">
           <label>Nom<input type="text" placeholder="Votre nom" /></label>
           <label>Téléphone<input type="tel" placeholder="06 00 00 00 00" /></label>
           <label>
