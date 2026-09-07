@@ -57,6 +57,35 @@ a {
   background: transparent;
   box-shadow: none;
   backdrop-filter: none;
+  transition: background 0.25s ease, box-shadow 0.25s ease, padding 0.25s ease;
+}
+
+.site-header.scrolled {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 32px rgba(7, 31, 45, 0.1);
+  backdrop-filter: blur(14px);
+}
+
+.site-header.scrolled .brand-mark {
+  background: var(--blue-dark);
+  color: white;
+}
+
+.site-header.scrolled .brand strong,
+.site-header.scrolled .main-nav a {
+  color: var(--ink);
+}
+
+.site-header.scrolled .brand small {
+  color: var(--muted);
+}
+
+.site-header.scrolled .main-nav a:hover,
+.site-header.scrolled .main-nav a.active {
+  background: var(--mist);
+  color: var(--blue-dark);
 }
 
 .brand {
