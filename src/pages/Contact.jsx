@@ -7,8 +7,8 @@ export default function Contact() {
       <Hero
         page
         eyebrow="Contact"
-        title="Un devis clair pour un espace impeccable."
-        text="Envoyez la surface, le quartier, le type de nettoyage et la fréquence souhaitée."
+        title="Devis nettoyage local."
+        text="Indiquez le lieu, la surface et le type de nettoyage souhaité."
         image={images.airbnbImage}
       />
       <section className="contact-section">

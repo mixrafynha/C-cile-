@@ -3,28 +3,28 @@ import { useLocation } from "react-router-dom";
 
 const pages = {
   "/": {
-    title: "Cécile Nettoyage | Nettoyage à Lunel 34400",
-    description: "Cécile Nettoyage propose des services de nettoyage soignés à Lunel 34400 et dans un rayon d'environ 100 km : maisons, bureaux et locations saisonnières."
+    title: "Nettoyage à Lunel | Cécile Nettoyage",
+    description: "Nettoyage de maisons, bureaux et locations à Lunel 34400, Vendargues, Mauguio et alentours. Devis clair et réponse rapide."
   },
   "/services": {
-    title: "Services de nettoyage à Lunel 34400 | Cécile Nettoyage",
-    description: "Découvrez les services de Cécile Nettoyage à Lunel 34400 et autour : ménage à domicile, bureaux, Airbnb, vitres, sanitaires et remise en état."
+    title: "Services de nettoyage | Lunel, Vendargues, Mauguio",
+    description: "Ménage à domicile, nettoyage de bureaux, Airbnb, vitres, sanitaires et remise en état à Lunel 34400, Vendargues et Mauguio."
   },
   "/formules": {
-    title: "Formules de ménage à Lunel 34400 | Cécile Nettoyage",
-    description: "Comparez les formules de nettoyage essentiel, premium et professionnel pour votre maison, bureau ou location à Lunel et dans un rayon de 100 km."
+    title: "Formules ménage | Lunel, Vendargues, Mauguio",
+    description: "Formules de nettoyage simples pour maison, bureau ou location saisonnière à Lunel, Vendargues, Mauguio et alentours."
   },
   "/catalogue": {
-    title: "Catalogue de nettoyage | Cécile Nettoyage Lunel",
-    description: "Choisissez le type de nettoyage adapté à votre besoin à Lunel 34400 et alentours : maison, bureaux, location saisonnière ou remise en état."
+    title: "Catalogue nettoyage | Lunel, Vendargues, Mauguio",
+    description: "Nettoyage maison, bureaux, Airbnb, vitres et remise en état à Lunel 34400, Vendargues, Mauguio et communes proches."
   },
   "/secteurs": {
-    title: "Zones desservies autour de Lunel 34400 | Cécile Nettoyage",
-    description: "Cécile Nettoyage intervient depuis Lunel 34400 dans un rayon d'environ 100 km, notamment vers Montpellier, Nîmes, La Grande-Motte et les communes proches."
+    title: "Zones nettoyage | Lunel, Vendargues, Mauguio",
+    description: "Cécile Nettoyage intervient à Lunel 34400, Vendargues, Mauguio, Baillargues, Castelnau-le-Lez, Lattes et Montpellier."
   },
   "/contact": {
-    title: "Devis nettoyage à Lunel 34400 | Cécile Nettoyage",
-    description: "Demandez un devis gratuit pour un nettoyage de maison, bureau ou location saisonnière à Lunel 34400 et dans un rayon d'environ 100 km."
+    title: "Devis nettoyage | Lunel, Vendargues, Mauguio",
+    description: "Demandez un devis de nettoyage à Lunel 34400, Vendargues ou Mauguio pour maison, bureau, Airbnb ou remise en état."
   }
 };
 
@@ -32,22 +32,19 @@ const businessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Cécile Nettoyage",
-  description: "Services de nettoyage pour particuliers, professionnels et locations saisonnières à Lunel 34400 et dans un rayon d'environ 100 km.",
+  description: "Services de nettoyage pour particuliers, professionnels et locations saisonnières à Lunel 34400, Vendargues, Mauguio et alentours.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lunel",
     postalCode: "34400",
     addressCountry: "FR"
   },
-  areaServed: {
-    "@type": "GeoCircle",
-    geoMidpoint: {
-      "@type": "GeoCoordinates",
-      latitude: 43.6773,
-      longitude: 4.1359
-    },
-    geoRadius: "100 km"
-  },
+  areaServed: [
+    { "@type": "City", name: "Lunel" },
+    { "@type": "City", name: "Vendargues" },
+    { "@type": "City", name: "Mauguio" },
+    { "@type": "AdministrativeArea", name: "Hérault" }
+  ],
   serviceType: ["Ménage à domicile", "Nettoyage de bureaux", "Nettoyage Airbnb", "Remise en état"]
 };
 

@@ -8,8 +8,8 @@ export default function Services() {
       <Hero
         page
         eyebrow="Services"
-        title="Des prestations propres, lisibles, faciles à choisir."
-        text="Une offre structurée pour maisons, bureaux, commerces et locations courte durée."
+        title="Services de nettoyage locaux."
+        text="Maison, bureaux et locations à Lunel, Vendargues, Mauguio et alentours."
         image={images.officeImage}
       />
       <section className="section service-grid service-grid-large">

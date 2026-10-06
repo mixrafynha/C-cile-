@@ -7,8 +7,8 @@ export default function Catalogue() {
       <Hero
         page
         eyebrow="Catalogue"
-        title="Les types de nettoyage, présentés clairement."
-        text="Un catalogue visuel pour que chaque client se reconnaisse rapidement."
+        title="Chaque nettoyage, clair."
+        text="Maison, bureaux, Airbnb et remise en état à Lunel, Vendargues et Mauguio."
         image={images.ecoImage}
       />
       <section className="section cleaning-types">

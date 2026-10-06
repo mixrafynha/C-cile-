@@ -46,4 +46,4 @@ export const packages = [
   }
 ];
 
-export const areas = ["Écusson", "Antigone", "Port Marianne", "Boutonnet", "Castelnau-le-Lez", "Lattes"];
+export const areas = ["Lunel", "Vendargues", "Mauguio", "Baillargues", "Castelnau-le-Lez", "Lattes", "La Grande-Motte", "Montpellier"];

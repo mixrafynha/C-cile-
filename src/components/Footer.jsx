@@ -17,8 +17,8 @@ export default function Footer() {
           <Link className="footer-logo" to="/" aria-label="Cécile Nettoyage accueil">
             <img className="footer-brand-logo" src={logo} alt="Cécile Nettoyage" />
             <span>
-              <strong>Nettoyage à Lunel</strong>
-              <small>Lunel 34400 & alentours</small>
+              <strong>Nettoyage à Lunel, Vendargues et Mauguio</strong>
+              <small>Lunel 34400 · Vendargues · Mauguio</small>
             </span>
           </Link>
           <h2>Un intérieur impeccable, sans stress.</h2>

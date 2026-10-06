@@ -8,8 +8,8 @@ export default function Formules() {
       <Hero
         page
         eyebrow="Formules"
-        title="Une offre simple, comme un catalogue de services."
-        text="Trois niveaux pour comprendre vite, demander vite et réserver sans confusion."
+        title="Formules simples."
+        text="Des niveaux clairs pour nettoyer maison, bureau ou location autour de Lunel."
         image={images.heroDesktop}
       />
       <section className="section package-grid page-package-grid">
