@@ -1,10 +1,10 @@
-export default function Hero({ eyebrow, title, text, image, mobileImage, children, page = false }) {
+export default function Hero({ eyebrow, title, mobileTitle, text, image, mobileImage, children, page = false }) {
   if (page) {
     return (
       <section className="page-hero">
         <img src={image} alt="" width="1600" height="900" />
         <div className="page-hero-copy reveal">
-          <p className="eyebrow">{eyebrow}</p>
+          {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
           <h1>{title}</h1>
           <p>{text}</p>
         </div>
@@ -20,8 +20,11 @@ export default function Hero({ eyebrow, title, text, image, mobileImage, childre
       </picture>
       <div className="hero-overlay"></div>
       <div className="hero-content reveal">
-        <p className="eyebrow">{eyebrow}</p>
-        <h1>{title}</h1>
+        {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
+        <h1>
+          <span className="desktop-title">{title}</span>
+          {mobileTitle ? <span className="mobile-title">{mobileTitle}</span> : null}
+        </h1>
         <p className="hero-copy">{text}</p>
         {children}
       </div>

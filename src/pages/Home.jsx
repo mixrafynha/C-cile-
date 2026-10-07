@@ -17,8 +17,13 @@ export default function Home() {
   return (
     <main id="accueil">
       <Hero
-        eyebrow="Nettoyage premium à Lunel, Vendargues et Mauguio"
-        title="Nettoyage à Lunel."
+        eyebrow=""
+        title="Nettoyage maison & bureaux à Lunel."
+        mobileTitle={
+          <>
+            Des intérieurs impeccables à <span>Lunel, Vendargues et Mauguio.</span>
+          </>
+        }
         text="Maison, bureaux et locations à Lunel 34400, Vendargues et Mauguio. Devis clair, réponse rapide."
         image={images.heroDesktop}
         mobileImage={images.heroMobile}
@@ -26,11 +31,6 @@ export default function Home() {
         <div className="hero-actions">
           <Link className="button primary" to="/contact">Demander un devis</Link>
           <Link className="button ghost" to="/formules">Voir les formules</Link>
-        </div>
-        <div className="trust-row" aria-label="Garanties du service">
-          <span>Devis gratuit</span>
-          <span>Intervention flexible</span>
-          <span>Produits sur demande</span>
         </div>
       </Hero>
 

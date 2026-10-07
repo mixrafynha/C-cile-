@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 
 const pages = {
   "/": {
-    title: "Nettoyage à Lunel | Cécile Nettoyage",
-    description: "Nettoyage de maisons, bureaux et locations à Lunel 34400, Vendargues, Mauguio et alentours. Devis clair et réponse rapide."
+    title: "Nettoyage maison et bureaux à Lunel | Cécile Nettoyage",
+    description: "Service de nettoyage maison, bureaux et locations à Lunel 34400, Vendargues, Mauguio et alentours. Devis clair et réponse rapide."
   },
   "/services": {
     title: "Services de nettoyage | Lunel, Vendargues, Mauguio",
