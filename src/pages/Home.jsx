@@ -25,8 +25,9 @@ export default function Home() {
           </>
         }
         text="Maison, bureaux et locations à Lunel 34400, Vendargues et Mauguio. Devis clair, réponse rapide."
-        image={images.heroDesktop}
-        mobileImage={images.heroMobile}
+        image={images.homeHero}
+        mobileImage={images.homeHero}
+        imageAlt="Salon lumineux avec produits de nettoyage"
       >
         <div className="hero-actions">
           <Link className="button primary" to="/contact">Demander un devis</Link>

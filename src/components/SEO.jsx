@@ -71,6 +71,7 @@ export default function SEO() {
       noindex: true,
     };
     const canonical = `${window.location.origin}${pathname === "/" ? "/" : pathname.replace(/\/$/, "")}`;
+    const ogImage = `${window.location.origin}/og-image.png`;
     const robots = data.noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 
     document.title = data.title;
@@ -83,9 +84,15 @@ export default function SEO() {
     upsertMeta('meta[property="og:locale"]', { property: "og:locale", content: "fr_FR" });
     upsertMeta('meta[property="og:site_name"]', { property: "og:site_name", content: "Cécile Nettoyage" });
     upsertMeta('meta[property="og:url"]', { property: "og:url", content: canonical });
+    upsertMeta('meta[property="og:image"]', { property: "og:image", content: ogImage });
+    upsertMeta('meta[property="og:image:width"]', { property: "og:image:width", content: "1200" });
+    upsertMeta('meta[property="og:image:height"]', { property: "og:image:height", content: "630" });
+    upsertMeta('meta[property="og:image:alt"]', { property: "og:image:alt", content: "Cécile Nettoyage - Maison, bureaux et locations à Lunel 34400" });
     upsertMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
     upsertMeta('meta[name="twitter:title"]', { name: "twitter:title", content: data.title });
     upsertMeta('meta[name="twitter:description"]', { name: "twitter:description", content: data.description });
+    upsertMeta('meta[name="twitter:image"]', { name: "twitter:image", content: ogImage });
+    upsertMeta('meta[name="twitter:image:alt"]', { name: "twitter:image:alt", content: "Cécile Nettoyage - Maison, bureaux et locations à Lunel 34400" });
     upsertLink("canonical", canonical);
 
     const faqItems = faqGroups.flatMap((group) => group.items);

@@ -1,5 +1,6 @@
 import heroDesktop from "./assets/hero-cleaning-montpellier.webp";
 import heroMobile from "./assets/hero-cleaning-montpellier-mobile.webp";
+import homeHero from "./assets/hero-limpeza.webp";
 import officeImage from "./assets/office-cleaning.webp";
 import ecoImage from "./assets/eco-cleaning-detail.webp";
 import airbnbImage from "./assets/airbnb-cleaning.webp";
@@ -7,6 +8,7 @@ import airbnbImage from "./assets/airbnb-cleaning.webp";
 export const images = {
   heroDesktop,
   heroMobile,
+  homeHero,
   officeImage,
   ecoImage,
   airbnbImage

@@ -1,4 +1,4 @@
-export default function Hero({ eyebrow, title, mobileTitle, text, image, mobileImage, children, page = false }) {
+export default function Hero({ eyebrow, title, mobileTitle, text, image, mobileImage, imageAlt = "Appartement lumineux et propre à Montpellier", children, page = false }) {
   if (page) {
     return (
       <section className="page-hero">
@@ -16,7 +16,7 @@ export default function Hero({ eyebrow, title, mobileTitle, text, image, mobileI
     <section className="hero">
       <picture className="hero-media">
         {mobileImage ? <source media="(max-width: 820px)" srcSet={mobileImage} /> : null}
-        <img src={image} alt="Appartement lumineux et propre à Montpellier" width="1600" height="900" fetchPriority="high" />
+        <img src={image} alt={imageAlt} width="1600" height="900" fetchPriority="high" />
       </picture>
       <div className="hero-overlay"></div>
       <div className="hero-content reveal">
